@@ -19,93 +19,86 @@
             text-align: center;
         }
 
-
-
         header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #333;
-    color: white;
-    padding: 15px 20px;
-}
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            color: white;
+            padding: 15px 20px;
+        }
 
-.Menu-btn {
-    background: #444;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
+        .Menu-btn {
+            background: #444;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
-.Menu-btn:hover {
-    background: #666;
-}
+        .Menu-btn:hover {
+            background: #666;
+        }
 
+        .Menu {
+            background: #444;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            display: none;
+            transition: all 0.3s ease-in-out;
+        }
 
-.Menu {
-    background: #444;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    display: none;
-    transition: all 0.3s ease-in-out;
-}
+        .Menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.Menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+        .Menu ul li {
+            padding: 12px;
+            border-bottom: 1px solid #555;
+        }
 
-.Menu ul li {
-    padding: 12px;
-    border-bottom: 1px solid #555;
-}
+        .Menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: block;
+        }
 
-.Menu ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    display: block;
-}
+        .Menu.show {
+            display: block;
+        }
 
+        @media (min-width: 768px) {
+            .Menu {
+                position: static;
+                display: flex;
+                justify-content: center;
+                background: none;
+            }
 
-.Menu.show {
-    display: block;
-}
+            .Menu ul {
+                display: flex;
+            }
 
+            .Menu ul li {
+                border: none;
+                padding: 0 15px;
+            }
 
-@media (min-width: 768px) {
-    .Menu {
-        position: static;
-        display: flex;
-        justify-content: center;
-        background: none;
-    }
+            .Menu ul li a {
+                font-size: 16px;
+            }
 
-    .Menu ul {
-        display: flex;
-    }
-
-    .Menu ul li {
-        border: none;
-        padding: 0 15px;
-    }
-
-    .Menu ul li a {
-        font-size: 16px;
-    }
-
-    .Menu-btn {
-        display: none;
-    }
-}
-
-
+            .Menu-btn {
+                display: none;
+            }
+        }
 
         .Head {
             height: 100vh;
