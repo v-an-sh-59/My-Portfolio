@@ -1,6 +1,6 @@
 # My-Portfolio
 
-Author : Vijay Prakash
+Admin : Vijay Prakash
 
 <br>
 
