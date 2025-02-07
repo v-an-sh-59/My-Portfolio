@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home{
+    font-weight: 1000;
+    margin-top: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.home a{
+    text-decoration: none;
+    font-size: 25px;
+   color: rgb(0, 0, 0);
+
+}
+
+.myimg1 {
+    
+    margin: 5px;
+}
+
+img{
+    height: 400px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 50%;
+    filter: drop-shadow(5px 15px 15px rgb(165, 165, 165));
+    background: rgb(247, 255, 176);
+}
+
+.myimg1 {
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.myimg1:hover {
+    transform: scale(1.05);
+}
+
+.name p{
+    font-size: 7vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px;
+    transform: 0.4s;
+}
+
+/*.name p:hover{
+    transform: scale(1.069);
+}*/
+
